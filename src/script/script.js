@@ -31,13 +31,24 @@ let swiper = new Swiper('.swiper', {
     pagination: {
       el: '.swiper-pagination',
     },
-  
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true,
+    },
+    effect: 'coverflow',
+    coverflowEffect: {
+        depth: 100,        // Depth offset in px
+        modifier: 1,       // Effect multiplier
+        rotate: 50,        // Slide rotate in degrees
+        stretch: 0,        // Stretch space between slides (in px)
+        slideShadows: true, // Enables slides shadows
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
+    speed: 1000,
     // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
