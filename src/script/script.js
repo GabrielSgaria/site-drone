@@ -21,6 +21,19 @@ document.getElementById('scrollToServices').addEventListener('click', function()
     });
 });
 
+document.getElementById('scrollToContact').addEventListener('click', function() {
+  document.getElementById('contact').scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+  });
+});
+
+document.getElementById('scrollToTop').addEventListener('click', function() {
+  document.getElementById('top').scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+  });
+});
 
 let swiper = new Swiper('.swiper', {
     // Optional parametersa
@@ -32,24 +45,23 @@ let swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
     },
     autoplay: {
-      delay: 4000,
+      delay: 9000,
       disableOnInteraction: true,
     },
     effect: 'coverflow',
     coverflowEffect: {
-        depth: 100,        // Depth offset in px
-        modifier: 1,       // Effect multiplier
-        rotate: 50,        // Slide rotate in degrees
-        stretch: 0,        // Stretch space between slides (in px)
-        slideShadows: true, // Enables slides shadows
+        depth: 100,        
+        modifier: 1,     
+        rotate: 50,        
+        stretch: 0,       
+        slideShadows: true,
     },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    speed: 1000,
-    // And if we need scrollbar
+    speed: 2000,
     scrollbar: {
       el: '.swiper-scrollbar',
     },
