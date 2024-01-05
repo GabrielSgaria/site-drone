@@ -66,3 +66,17 @@ let swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+
+// REQUISIÇÃO HYGRAPH
+
+  // query MyQuery {
+  //   portfolios(stage: PUBLISHED) {
+  //     id
+  //     nomeDoProjeto
+  //     video {
+  //       url
+  //     }
+  //     descricao
+  //   }
+  // }
