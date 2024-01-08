@@ -14,6 +14,13 @@ function onToggleMenu(e) {
     icon.classList.toggle('right-5')
 }   
 
+document.getElementById('scrollToPortfolio').addEventListener('click', function() {
+  document.getElementById('portfolio').scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+  });
+});
+
 document.getElementById('scrollToServices').addEventListener('click', function() {
     document.getElementById('services').scrollIntoView({
         behavior: 'smooth',
