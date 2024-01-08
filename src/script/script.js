@@ -14,6 +14,7 @@ function onToggleMenu(e) {
     icon.classList.toggle('right-5')
 }   
 
+
 document.getElementById('scrollToPortfolio').addEventListener('click', function() {
   document.getElementById('portfolio').scrollIntoView({
       behavior: 'smooth',
@@ -41,6 +42,14 @@ document.getElementById('scrollToTop').addEventListener('click', function() {
       block: 'center'
   });
 });
+
+function enviarMensagem(numeroTelefone, mensagemPadrao) {
+
+  var linkWhatsApp = 'https://wa.me/' + numeroTelefone + '?text=' + encodeURIComponent(mensagemPadrao);
+
+  window.open(linkWhatsApp, '_blank');
+}
+
 
 let swiper = new Swiper('.swiper', {
     // Optional parametersa
