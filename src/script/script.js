@@ -60,15 +60,11 @@ function enviarMensagem(numeroTelefone, mensagemPadrao) {
 
 let swiper = new Swiper(".swiper", {
   direction: "horizontal",
-  loop: true,
 
   pagination: {
     el: ".swiper-pagination",
   },
-  autoplay: {
-    delay: 90000,
-    disableOnInteraction: true,
-  },
+
   effect: "coverflow",
   coverflowEffect: {
     depth: 100,
