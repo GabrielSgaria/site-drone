@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/tailwind.config.js"></script>
-
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="icon" href="/assets/img/maceno-films-company-logo.svg">
     <title>Maceno Films Company</title>
 </head>
+<script src="https://fast.wistia.com/embed/medias/y148idlkxh.jsonp" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+<script src="https://fast.wistia.com/embed/medias/h9vl7l0lx8.jsonp" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
 
 <body class="font-sans bg-stone-300">
     <header class="bg-stone-950 shadow-md h-20 flex items-center" id="top">
@@ -50,11 +53,17 @@
     </header>
     <main>
         <section class="relative w-full h-screen">
-            <img src="https://media.graphassets.com/E8DJUMNaTie6zcPocK8E" alt="" class="object-cover w-full h-screen absolute -z-10 rounded-b-3xl ">
-            <!--<video class="object-cover w-full h-screen absolute -z-10 rounded-b-3xl " loop playsinline autoplay muted preload="auto">
-                <source src="https://media.graphassets.com/RVCo5KJQSabMe0wmMUKi" type="video/mp4"
-                    alt="Filmagem Drone 4k">
-            </video>-->
+            <div class="wistia_responsive_padding relative" >
+                <div class="wistia_responsive_wrapper h-full left-0 absolute top-0 w-full">
+                    <div class="h-full relative w-full wistia_embed wistia_async_h9vl7l0lx8 seo=true videoFoam=true">
+                        <div class="wistia_swatch h-full left-0 absolute top-0 w-full">
+                            <img class="blur[5px] h-full object-contain w-full" src="https://fast.wistia.com/embed/medias/h9vl7l0lx8/swatch"
+                                 alt=""
+                                aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div>
+                    </div>
+                </div>
+            </div>
+
             <div
                 class="container mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-stone-50 text-center z-10">
                 <img class="max-w-screen-md w-[80%] mx-auto mb-8 md:w-full sm:w-3/4"
@@ -73,7 +82,7 @@
             </div>
         </section>
 
-        <div class="container mx-auto mt-8" id="services">
+        <div class="container mx-auto mt-36" id="services">
             <h1 class="text-center md:text-3xl font-bold mb-8 sm:text-2xl">CONHEÇA OS SERVIÇOS MACENO FILMS COMPANY</h1>
             <div class="flex flex-col gap-4 mx-3 md:flex-row sm:flex-col md:gap-6 sm:gap-14">
                 <div class="bg-stone-200 rounded overflow-hidden shadow-md w-full">
@@ -134,17 +143,31 @@
         </div>
 
         <!-- 
-                VIDEOS RETRATO
-            -->
-        <div class="container mx-auto flex flex-col-reverse md:flex-row md:items-center md:justify-center mt-8" id="portfolio">
+            VIDEOS RETRATO
+        -->
+        <div class="container mx-auto flex flex-col-reverse md:flex-row md:items-center md:justify-center mt-8"
+            id="portfolio">
             <div class="mt-8 w-full md:w-[50%] lg:landscape:w-[60%] swiperRetrato">
                 <div class="swiper w-[330px] h-[600px] md:h-[700px] lg:h-[700px] ">
                     <div class="swiper-wrapper w-full">
                         <div class="swiper-slide text-center flex justify-center items-center video-slide">
-                            <video class="block w-full h-full object-fit primeiroVideo" playsinline controls preload="auto">
-                                <source src="https://media.graphassets.com/spubcoKTiuNgJBy7rhUY" type="video/mp4"
-                                    alt="Produção empresarial para imobiliária video e fala">
-                            </video>
+
+                            <div class="wistia_responsive_padding w-full object-fill relative">
+                                <div class="wistia_responsive_wrapper h-full w-full">
+                                    <div class="wistia_embed wistia_async_y148idlkxh seo=true videoFoam=true ">
+                                        <div class="wistia_swatch w-full h-full absolute left-0 top-0"
+                                            style="transition:opacity 200ms;">
+                                            <img class="object-contain blur[5px] w-full h-full"
+                                                src="https://fast.wistia.com/embed/medias/y148idlkxh/swatch" alt=""
+                                                aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<source src="https://media.graphassets.com/spubcoKTiuNgJBy7rhUY" type="video/mp4"
+                                    alt="Produção empresarial para imobiliária video e fala">-->
+
                         </div>
                         <div class="swiper-slide text-center flex justify-center items-center video-slide">
                             <video class="block w-full h-full object-fit" playsinline controls preload="auto">
@@ -210,7 +233,7 @@
                                     alt="Filmagem aérea 4k">
                             </video>
                         </div>
-                        
+
                     </div>
 
                     <div class="swiper-pagination"> </div>
@@ -330,6 +353,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/src/script/script.js"></script>
     <script src="/tailwind.config.js"></script>
+
 </body>
 
 </html>
